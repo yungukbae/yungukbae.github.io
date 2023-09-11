@@ -105,10 +105,8 @@ function Scene() {
       <pointLight position={[-10, 0, 0]} intensity={0.05} />
       <spotLight ref={spot} intensity={1} distance={7} angle={1} penumbra={1} position={[0, 0, 1]} />
       {/* Prism + blocks + reflect beam */}
-      <Beam ref={boxreflect} bounce={10} far={20}>
+      <Beam ref={boxreflect} bounce={10} far={40}>
         <Prism scale={.6} position={[0, -0.5, 0]} onRayOver={rayOver} onRayOut={rayOut} onRayMove={rayMove} />
-      {/* <Box position={[-1.4, 1, 0]} rotation={[0, 0, Math.PI / 8]} />
-      <Box position={[-2.4, -1, 0]} rotation={[0, 0, Math.PI / -4]} /> */}
       </Beam>
       {/* Rainbow and flares */}
       <Rainbow ref={rainbow} startRadius={0} endRadius={0.5} fade={0} />

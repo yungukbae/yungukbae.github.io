@@ -125,7 +125,9 @@ export const Reflect = forwardRef(({ children, start: _start = [0, 0, 0], end: _
     [bounce, far]
   )
 
-  useLayoutEffect(() => void api.setRay(_start, _end), [..._start, ..._end])
+  useLayoutEffect(() => setTimeout(
+    void api.setRay([-5,4,0], _end),[2000]
+  ), [..._start, ..._end])
   useImperativeHandle(fRef, () => api, [api])
 
   useLayoutEffect(() => {
