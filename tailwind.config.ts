@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 
+
 const config: Config = {
   content: [
     './src/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,7 +13,17 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    animation:{
+      fadeIn:'fadeIn 1s ease-in'
+    },
+    keyframes:{
+      fadeIn:{
+        '0%':{ opacity:'0'},
+        '100%':{ opacity:'1' }
+      }
+    }
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 export default config
