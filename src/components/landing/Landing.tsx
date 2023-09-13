@@ -35,7 +35,7 @@ const Landing = () => {
         <div className={cn(["rainbow"])}>
           <button
             className="text-md h-[36px] w-full bg-black text-gray-500 rounded-[5px]"
-            onClick={() => router.push("/posts")}
+            onClick={() => router.replace("/posts")}
           >
             EXPLORE POSTS
           </button>
