@@ -42,6 +42,24 @@ body {
     }
   }
 
+  @keyframes fadeInoDown {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -20%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+
+  .link {
+    opacity: 0;
+    animation: fadeInoDown 0.5s ease-in;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+  }
+
   .rainbow {
     position: relative;
     z-index: 0;
@@ -50,7 +68,7 @@ body {
     padding: 2px;
     opacity: 0;
     animation: fadeIn 2s ease-in;
-    -webkit-animation-delay: 2.5s;
+    -webkit-animation-delay: 3.3s;
     -webkit-animation-fill-mode: forwards;
   }
 

@@ -1,6 +1,5 @@
 import { cn } from "@/util/cn";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 const Landing = () => {
   const router = useRouter();
@@ -15,7 +14,7 @@ const Landing = () => {
       ])}
     >
       <div className="flex flex-col justify-between h-[300px] w-[300px]">
-        <div className="flex flex-row w-50 justify-around animate-fadeInoDown">
+        <div className={cn(["flex flex-row w-50 justify-around", "link"])}>
           <div
             className="cursor-pointer text-md hover:underline text-gray-300"
             onClick={() => handleLink("https://github.com/yungukbae")}
@@ -38,7 +37,7 @@ const Landing = () => {
             className="text-md h-[36px] w-full bg-black text-gray-500 rounded-[5px]"
             onClick={() => router.push("/posts")}
           >
-            EXPLORE POST
+            EXPLORE POSTS
           </button>
         </div>
       </div>
