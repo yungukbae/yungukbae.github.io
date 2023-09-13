@@ -34,10 +34,10 @@ const Landing = () => {
         </div>
         <div className={cn(["rainbow"])}>
           <button
-            className="text-md h-[36px] w-full bg-black text-gray-500 rounded-[5px] cursor-default"
-            // onClick={() => router.push("/posts")}
+            className="text-md h-[36px] w-full bg-black text-gray-500 rounded-[5px]"
+            onClick={() => router.push("/posts")}
           >
-            COMMING SOON...
+            EXPLORE POSTS
           </button>
         </div>
       </div>
