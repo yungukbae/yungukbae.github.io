@@ -1,7 +1,8 @@
 {
-    "editor.quickSuggestions": {
-        "strings": true
-        },
-        "css.validate": false,
-        "editor.inlineSuggest.enabled": true
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.validate": false,
+  "editor.inlineSuggest.enabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
