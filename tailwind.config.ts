@@ -14,12 +14,17 @@ const config: Config = {
       },
     },
     animation:{
-      fadeIn:'fadeIn 1s ease-in'
+      fadeIn:'fadeIn 0.5s',
+      fadeInoDown:'fadeInoDown 1.3s'
     },
     keyframes:{
       fadeIn:{
         '0%':{ opacity:'0'},
         '100%':{ opacity:'1' }
+      },
+      fadeInoDown:{
+        '0%':{ opacity:'0',transform: 'translate3d(0, -100%, 0)'},
+        '100%':{ opacity:'1',transform: 'translateZ(0)' }
       }
     }
   },
