@@ -17,13 +17,13 @@ const Landing = () => {
       <div className="flex flex-col justify-between h-[300px] w-[300px]">
         <div className="flex flex-row w-50 justify-around animate-fadeInoDown">
           <div
-            className="cursor-pointer text-md hover:underline"
+            className="cursor-pointer text-md hover:underline text-gray-300"
             onClick={() => handleLink("https://github.com/yungukbae")}
           >
             Github
           </div>
           <div
-            className="cursor-pointer text-md hover:underline"
+            className="cursor-pointer text-md hover:underline text-gray-300"
             onClick={() =>
               handleLink(
                 "https://www.linkedin.com/in/%EC%9C%A4%EA%B5%AD-%EB%B0%B0-133855175/"
