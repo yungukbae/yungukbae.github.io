@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const variants = {
   visible: (i: number) => ({
@@ -16,15 +17,18 @@ interface Props {
 
 const Post = (props: Props) => {
   const { idx } = props;
+  const router = useRouter();
+
   return (
     <motion.div
       className="mb-5 cursor-pointer p-2 hover:backdrop-blur-md hover:brightness-150"
       custom={idx}
       animate="visible"
       variants={variants}
+      onClick={() => router.push(`/posts/${idx}`)}
     >
       <h3 className="text-gray-300 text-xl font-semibold mb-2">
-        How to improve Rainbow color?
+        How to improve Rainbow color? {idx}
       </h3>
       <p className="text-xs text-gray-700">2023.01.01</p>
       <p className="text-md text-gray-500 break-words line-clamp-2">
